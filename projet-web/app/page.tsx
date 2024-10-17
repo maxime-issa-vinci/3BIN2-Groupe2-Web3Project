@@ -1,11 +1,11 @@
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <div>
         <Navbar />
     <div className="p-4 m-4">
-      <h1 className="text-3xl font-extrabold text-center text-blue-600 mb-6">
+      <h1 className="text-3xl font-extrabold text-center text-black mb-6">
         Welcome to Next.js!
       </h1>
       <h2 className="text-lg text-gray-700 leading-relaxed text-left mb-4">
