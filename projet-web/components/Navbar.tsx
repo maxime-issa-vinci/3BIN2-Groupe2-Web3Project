@@ -19,7 +19,7 @@ export default function Navbar() {
             
 
             <ul className="flex space-x-4">
-                <Link href="/test">
+                <Link href="/route">
                 <li className="text-gray-700 font-medium text-base hover:text-black transition-colors">
                     Routes
                 </li>
