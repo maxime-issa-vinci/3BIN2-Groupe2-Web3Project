@@ -4,15 +4,16 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../components/hooks/use-outside-click";
 import Navbar from "../../components/Navbar";
-import { cards } from "./cardsData";
+import { cars } from "../../data/cars";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { SelectContent, Select, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function ExpandableCardDemo() {
-    const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+    const [active, setActive] = useState<(typeof cars)[number] | boolean | null>(
       null
     );
+    const [hoveredCar, setHoveredCar] = useState<string | null>(null);
     const id = useId();
     const ref = useRef<HTMLDivElement>(null);
    
@@ -112,6 +113,7 @@ export default function ExpandableCardDemo() {
                 </motion.div>
    
                 <div>
+                  <div>
                   <div className="flex justify-between items-start p-4">
                     <div className="">
                       <motion.h3
@@ -140,6 +142,12 @@ export default function ExpandableCardDemo() {
                       {active.ctaText}
                     </motion.a>
                   </div>
+                  <motion.div className="font-bold grid grid-cols-3 gap-4 text-center">
+                    <div>{active.max_speed} km/h</div>
+                    <div>{active.power} ch</div>
+                    <div>{active.zero_to_100} s</div>
+                  </motion.div>
+                </div>  
                   <div className="pt-4 relative px-4">
                     <motion.div
                       layout
@@ -160,35 +168,42 @@ export default function ExpandableCardDemo() {
         </AnimatePresence>
         
         <ul className="w-full grid grid-cols-1 md:grid-cols-4 items-start gap-4">
-          {cards.map((card) => (
+          {cars.map((car) => (
             <motion.div
-              layoutId={`card-${card.title}-${id}`}
-              key={card.title}
-              onClick={() => setActive(card)}
-              className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+              layoutId={`card-${car.title}-${id}`}
+              key={car.title}
+              onClick={() => setActive(car)}
+              className="p-4 flex flex-col hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer relative"
+              onMouseEnter={() => setHoveredCar(car.title)}
+              onMouseLeave={() => setHoveredCar(null)}
             >
-              <div className="flex gap-4 flex-col  w-full">
-                <motion.div layoutId={`image-${card.title}-${id}`}>
+              <div className="flex gap-4 flex-col w-full">
+                <motion.div layoutId={`image-${car.title}-${id}`} className="relative">
                   <Image
                     width={100}
                     height={100}
-                    src={card.src}
-                    alt={card.title}
-                    className="h-60 w-full  rounded-lg object-cover object-top"
+                    src={car.src}
+                    alt={car.title}
+                    className={`h-60 w-full rounded-lg object-cover object-top transition-opacity duration-300 ${hoveredCar === car.title && car.price ? 'opacity-50' : 'opacity-100'}`}
                   />
+                  {hoveredCar === car.title && car.price && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+                      <span className="text-lg font-bold text-stone-50">{car.price}</span>
+                    </div>
+                  )}
                 </motion.div>
                 <div className="flex justify-center items-center flex-col">
                   <motion.h3
-                    layoutId={`title-${card.title}-${id}`}
+                    layoutId={`title-${car.title}-${id}`}
                     className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
                   >
-                    {card.title}
+                    {car.title}
                   </motion.h3>
                   <motion.p
-                    layoutId={`description-${card.description}-${id}`}
+                    layoutId={`description-${car.description}-${id}`}
                     className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
                   >
-                    {card.description}
+                    {car.description}
                   </motion.p>
                 </div>
               </div>
@@ -199,36 +214,36 @@ export default function ExpandableCardDemo() {
     );
   }
    
-  export const CloseIcon = () => {
-    return (
-      <motion.svg
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        exit={{
-          opacity: 0,
-          transition: {
-            duration: 0.05,
-          },
-        }}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="h-4 w-4 text-black"
-      >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M18 6l-12 12" />
-        <path d="M6 6l12 12" />
-      </motion.svg>
-    );
-  };
+export const CloseIcon = () => {
+  return (
+    <motion.svg
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      exit={{
+        opacity: 0,
+        transition: {
+          duration: 0.05,
+        },
+      }}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-4 w-4 text-black"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 6l-12 12" />
+      <path d="M6 6l12 12" />
+    </motion.svg>
+  );
+};
    
