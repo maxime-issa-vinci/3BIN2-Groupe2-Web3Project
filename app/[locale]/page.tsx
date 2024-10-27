@@ -23,8 +23,13 @@ import React from "react";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import Link from "next/link";
 import { Cover } from "@/components/ui/cover";
+import {useTranslations} from 'next-intl';
+import { routing } from "@/i18n/routing"
 
 export default function Home() {
+
+    const t = useTranslations('HomePage');
+    const locale = routing.defaultLocale;
   return (
     <div>
       <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
@@ -32,9 +37,7 @@ export default function Home() {
             Find your <Cover>dream</Cover> car <br /> with us.
         </h2>
         <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
-            Find your perfect car with our cutting-edge technology. 
-            We analyze thousands of data points to recommend 
-            the ideal vehicle based on your performance, fuel efficiency, and budget criteria.
+            {t('description')}
         </p>
         <div className="flex space-x-4 mt-4">
             <Dialog>
@@ -94,7 +97,7 @@ export default function Home() {
                     </DialogFooter>
                 </DialogContent>
           </Dialog>
-          <Link href="/cars">
+          <Link href={`${locale}/cars`}>
             <Button className="px-4 py-2 rounded-md border border-neutral-300 bg-neutral-100 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md" variant="outline">All cars</Button>
           </Link>
         </div>

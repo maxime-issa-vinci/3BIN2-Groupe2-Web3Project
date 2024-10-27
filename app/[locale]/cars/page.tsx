@@ -2,14 +2,21 @@
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useOutsideClick } from "../../components/hooks/use-outside-click";
-import Navbar from "../../components/Navbar";
-import { cars } from "../../data/cars";
+import { useOutsideClick } from "../../../components/hooks/use-outside-click";
+import Navbar from "../../../components/Navbar";
+import { cars } from "../../../data/cars";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { SelectContent, Select, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
+import {useTranslations} from 'next-intl';
+
+
 export default function ExpandableCardDemo() {
+
+  const t = useTranslations('HomePage');
+
+  
     const [active, setActive] = useState<(typeof cars)[number] | boolean | null>(
       null
     );
