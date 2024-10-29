@@ -1,7 +1,7 @@
 import React from "react";
-import { Timeline } from "../../components/ui/timeline";
-import Navbar from "../../components/Navbar";
-import { cars } from "./../../data/cars";
+import { Timeline } from "../../../components/ui/timeline";
+import Navbar from "../../../components/Navbar";
+import { cars } from "../../../data/cars";
 
 export default function TimelineDemo() {
   // Regroupement des voitures par année
