@@ -99,16 +99,16 @@ export default function ExpandableCardDemo() {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+                className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <Image
                     priority
-                    width={200}
-                    height={200}
+                    width={360}
+                    height={240}
                     src={active.src}
                     alt={active.title}
-                    className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                    className="w-full lg:h-96 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                   />
                 </motion.div>
    
@@ -180,11 +180,11 @@ export default function ExpandableCardDemo() {
               <div className="flex gap-4 flex-col w-full">
                 <motion.div layoutId={`image-${car.title}-${id}`} className="relative">
                   <Image
-                    width={100}
-                    height={100}
+                    width={360}
+                    height={240}
                     src={car.src}
                     alt={car.title}
-                    className={`h-60 w-full rounded-lg object-cover object-top transition-opacity duration-300 ${hoveredCar === car.title && car.price ? 'opacity-50' : 'opacity-100'}`}
+                    className={`h-72 w-full rounded-lg object-cover object-top transition-opacity duration-300 ${hoveredCar === car.title && car.price ? 'opacity-50' : 'opacity-100'}`}
                   />
                   {hoveredCar === car.title && car.price && (
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
