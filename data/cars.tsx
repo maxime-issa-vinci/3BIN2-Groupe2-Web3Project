@@ -71,7 +71,7 @@ export const cars = [
     },
     {
         description: "Luxury Sports Car",
-        title: "Porsche 911",
+        title: "Porsche Macan GTS",
         year: 2021,
         brand: "Porsche",
         model: "911",
@@ -100,7 +100,7 @@ export const cars = [
     },
     {
         description: "Supercar",
-        title: "Lamborghini Aventador",
+        title: "Lamborghini Aventador SVJ",
         year: 2018,
         brand: "Lamborghini",
         model: "Aventador",
@@ -395,156 +395,204 @@ export const cars = [
         );
       },
     },
-      {
-        description: "Petrol",
-        title: "Porsche - 992 GT3",
-        year: 2021,
-        brand: "Porsche",
-        model: "992 GT3",
-        power: 510,
-        src: "https://static.wixstatic.com/media/bd4349_88e2cd0329e5469b981eb20fe33bab46~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_88e2cd0329e5469b981eb20fe33bab46~mv2.jpg",
-        ctaText: "Learn More",
-        ctaLink: "https://www.porsche.com/usa/models/911/911-gt3-models/911-gt3/",
-        content: () => {
-          return (
-            <p>
-              The Porsche 992 GT3 is a track-ready sports car with an exhilarating naturally aspirated 
-              flat-six engine producing 510 horsepower. Known for its high-revving engine and precision handling, 
-              the 992 GT3 is a favorite among performance enthusiasts. <br /> <br /> Its aggressive aerodynamic design 
-              and lightweight materials ensure incredible speed and agility both on the track and the road.
-            </p>
-          );
-        },
+    {
+      description: "Petrol",
+      title: "Porsche - 992 GT3",
+      year: 2021,
+      brand: "Porsche",
+      model: "992 GT3",
+      power: 510,
+      src: "https://static.wixstatic.com/media/bd4349_88e2cd0329e5469b981eb20fe33bab46~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_88e2cd0329e5469b981eb20fe33bab46~mv2.jpg",
+      ctaText: "Learn More",
+      ctaLink: "https://www.porsche.com/usa/models/911/911-gt3-models/911-gt3/",
+      content: () => {
+        return (
+          <p>
+            The Porsche 992 GT3 is a track-ready sports car with an exhilarating naturally aspirated 
+            flat-six engine producing 510 horsepower. Known for its high-revving engine and precision handling, 
+            the 992 GT3 is a favorite among performance enthusiasts. <br /> <br /> Its aggressive aerodynamic design 
+            and lightweight materials ensure incredible speed and agility both on the track and the road.
+          </p>
+        );
       },
-      {
-        description: "Petrol",
-        title: "Bentley Bentayga V8 S",
-        year: 2021,
-        brand: "Bentley",
-        model: "Bentayga V8 S",
-        power: 550,
-        src: "https://static.wixstatic.com/media/bd4349_d9f6f7d594ee4746a35ab6284ecddd95~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_d9f6f7d594ee4746a35ab6284ecddd95~mv2.jpg",
-        ctaText: "Learn More",
-        ctaLink: "https://www.bentleymotors.com/en/models/bentayga/bentayga-v8.html",
-        content: () => {
-          return (
-            <p>
-              The Bentley Bentayga V8 S is a luxurious SUV that combines exceptional comfort with raw power. 
-              With a 4.0-liter twin-turbo V8 producing 550 horsepower, the Bentayga V8 S provides a perfect 
-              blend of high performance and refined luxury. <br /> <br /> Its spacious interior, advanced 
-              technology, and powerful engine make it an ideal choice for those seeking an SUV with unmatched 
-              prestige and capability.
-            </p>
-          );
-        },
+    },
+    {
+      description: "Petrol",
+      title: "Bentley Bentayga V8 S",
+      year: 2021,
+      brand: "Bentley",
+      model: "Bentayga V8 S",
+      power: 550,
+      src: "https://static.wixstatic.com/media/bd4349_d9f6f7d594ee4746a35ab6284ecddd95~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_d9f6f7d594ee4746a35ab6284ecddd95~mv2.jpg",
+      ctaText: "Learn More",
+      ctaLink: "https://www.bentleymotors.com/en/models/bentayga/bentayga-v8.html",
+      content: () => {
+        return (
+          <p>
+            The Bentley Bentayga V8 S is a luxurious SUV that combines exceptional comfort with raw power. 
+            With a 4.0-liter twin-turbo V8 producing 550 horsepower, the Bentayga V8 S provides a perfect 
+            blend of high performance and refined luxury. <br /> <br /> Its spacious interior, advanced 
+            technology, and powerful engine make it an ideal choice for those seeking an SUV with unmatched 
+            prestige and capability.
+          </p>
+        );
       },
-      {
-        description: "Petrol",
-        title: "Bentley Continental W12",
-        year: 2021,
-        brand: "Bentley",
-        model: "Continental W12",
-        power: 660,
-        src: "https://static.wixstatic.com/media/bd4349_7df0678ce45a47bbb8a81163bcc5eca5~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_7df0678ce45a47bbb8a81163bcc5eca5~mv2.jpg",
-        ctaText: "Learn More",
-        ctaLink: "https://www.bentleymotors.com/en/models/continental-gt/continental-gt-speed.html",
-        content: () => {
-          return (
-            <p>
-              The Bentley Continental W12 is an iconic grand tourer, known for its elegant design and 
-              unparalleled performance. Powered by a 6.0-liter W12 engine that delivers 660 horsepower, 
-              it effortlessly blends power, luxury, and cutting-edge technology. <br /> <br /> Whether you&apos;re 
-              cruising long distances or navigating city streets, the Continental W12 offers a truly 
-              luxurious driving experience.
-            </p>
-          );
-        },
+    },
+    {
+      description: "Petrol",
+      title: "Bentley Continental W12",
+      year: 2021,
+      brand: "Bentley",
+      model: "Continental W12",
+      power: 660,
+      src: "https://static.wixstatic.com/media/bd4349_7df0678ce45a47bbb8a81163bcc5eca5~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_7df0678ce45a47bbb8a81163bcc5eca5~mv2.jpg",
+      ctaText: "Learn More",
+      ctaLink: "https://www.bentleymotors.com/en/models/continental-gt/continental-gt-speed.html",
+      content: () => {
+        return (
+          <p>
+            The Bentley Continental W12 is an iconic grand tourer, known for its elegant design and 
+            unparalleled performance. Powered by a 6.0-liter W12 engine that delivers 660 horsepower, 
+            it effortlessly blends power, luxury, and cutting-edge technology. <br /> <br /> Whether you&apos;re 
+            cruising long distances or navigating city streets, the Continental W12 offers a truly 
+            luxurious driving experience.
+          </p>
+        );
       },
-      {
-        description: "Petrol",
-        title: "Ferrari Roma",
-        year: 2021,
-        brand: "Ferrari",
-        model: "Roma",
-        power: 620,
-        src: "https://static.wixstatic.com/media/bd4349_8b940606bbc144acb88331f3f81017d4~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_8b940606bbc144acb88331f3f81017d4~mv2.jpg",
-        ctaText: "Learn More",
-        ctaLink: "https://www.ferrari.com/en-US/auto/ferrari-roma",
-        content: () => {
-          return (
-            <p>
-              The Ferrari Roma is a stunning grand touring coupe that combines timeless design 
-              with modern performance. With a 3.9-liter twin-turbo V8 producing 620 horsepower, 
-              the Roma offers blistering acceleration and sharp handling. <br /> <br /> Its sleek, 
-              minimalist design is a tribute to Ferrari&apos;s heritage, making the Roma one of the 
-              most visually captivating and exhilarating cars to drive.
-            </p>
-          );
-        },
+    },
+    {
+      description: "Petrol",
+      title: "Bentley Continental V8 S",
+      year: 2021,
+      brand: "Bentley",
+      model: "Continental V8 S",
+      power: 507,
+      src: "https://static.wixstatic.com/media/bd4349_7a1cd772df5e45479c8e1073793af2ff~mv2.jpg/v1/fill/w_776,h_638,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bd4349_7a1cd772df5e45479c8e1073793af2ff~mv2.jpg",
+      ctaText: "Learn More",
+      ctaLink: "https://www.bentleymotors.com/en/models/continental-gt/continental-gt-speed.html",
+      content: () => {
+        return (
+          <p>
+            The Bentley Continental V8 S is a high-performance grand tourer that combines 
+            luxury with exhilarating power. With a 4.0-liter twin-turbo V8 engine producing 
+            507 horsepower, the Continental V8 S offers a thrilling driving experience. <br /> <br /> 
+            Its elegant design, sumptuous interior, and advanced technology make it the perfect 
+            choice for those seeking a blend of performance and sophistication.
+          </p>
+        );
       },
-      {
-        description: "Petrol",
-        title: "Range Rover Sport SV P635",
-        year: 2021,
-        brand: "Land Rover",
-        model: "Range Rover Sport SV P635",
-        power: 635,
-        src: "https://static.wixstatic.com/media/bd4349_dc13f18235b74a0198d49997887c8bfb~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_dc13f18235b74a0198d49997887c8bfb~mv2.jpg",
-        ctaText: "Learn More",
-        ctaLink: "https://www.landrover.com/vehicles/range-rover-sport/index.html",
-        content: () => {
-          return (
-            <p>
-              The Range Rover Sport SV P635 is a high-performance luxury SUV that brings power and 
-              sophistication to every journey. Powered by a 5.0-liter supercharged V8 engine, it delivers 
-              635 horsepower. <br /> <br /> The SV P635 blends Land Rover&apos;s legendary off-road capabilities 
-              with a luxurious interior and advanced technology, making it a formidable SUV both on and 
-              off the road.
-            </p>
-          );
-        },
+    },
+    {
+      description: "Petrol",
+      title: "Ferrari Roma",
+      year: 2021,
+      brand: "Ferrari",
+      model: "Roma",
+      power: 620,
+      src: "https://static.wixstatic.com/media/bd4349_8b940606bbc144acb88331f3f81017d4~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_8b940606bbc144acb88331f3f81017d4~mv2.jpg",
+      ctaText: "Learn More",
+      ctaLink: "https://www.ferrari.com/en-US/auto/ferrari-roma",
+      content: () => {
+        return (
+          <p>
+            The Ferrari Roma is a stunning grand touring coupe that combines timeless design 
+            with modern performance. With a 3.9-liter twin-turbo V8 producing 620 horsepower, 
+            the Roma offers blistering acceleration and sharp handling. <br /> <br /> Its sleek, 
+            minimalist design is a tribute to Ferrari&apos;s heritage, making the Roma one of the 
+            most visually captivating and exhilarating cars to drive.
+          </p>
+        );
       },
-      {
-        description: "Petrol",
-        title: "Porsche 718 Spyder RS",
-        year: 2021,
-        brand: "Porsche",
-        model: "718 Spyder RS",
-        power: 500,
-        src: "https://static.wixstatic.com/media/bd4349_96869a4b367942e7bb0e929142864ce9~mv2.png/v1/fill/w_1552,h_1276,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/bd4349_96869a4b367942e7bb0e929142864ce9~mv2.png",
-        ctaText: "Learn More",
-        ctaLink: "https://www.porsche.com/usa/models/718/718-spyder-rs/",
-        content: () => {
-          return (
-            <p>
-              The Porsche 718 Spyder RS is a lightweight, high-performance roadster designed for pure driving 
-              pleasure. With its 4.0-liter flat-six engine producing 500 horsepower, the Spyder RS offers 
-              incredible agility and speed. <br /> <br /> Its convertible design, combined with Porsche&apos;s 
-              engineering prowess, makes it a thrilling choice for open-top driving enthusiasts.
-            </p>
-          );
-        },
+    },
+    {
+      description: "Petrol",
+      title: "Range Rover Sport SV P635",
+      year: 2021,
+      brand: "Land Rover",
+      model: "Range Rover Sport SV P635",
+      power: 635,
+      src: "https://static.wixstatic.com/media/bd4349_dc13f18235b74a0198d49997887c8bfb~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_dc13f18235b74a0198d49997887c8bfb~mv2.jpg",
+      ctaText: "Learn More",
+      ctaLink: "https://www.landrover.com/vehicles/range-rover-sport/index.html",
+      content: () => {
+        return (
+          <p>
+            The Range Rover Sport SV P635 is a high-performance luxury SUV that brings power and 
+            sophistication to every journey. Powered by a 5.0-liter supercharged V8 engine, it delivers 
+            635 horsepower. <br /> <br /> The SV P635 blends Land Rover&apos;s legendary off-road capabilities 
+            with a luxurious interior and advanced technology, making it a formidable SUV both on and 
+            off the road.
+          </p>
+        );
       },
-      {
-        description: "Petrol",
-        title: "Porsche 718 GT4 RS",
-        year: 2021,
-        brand: "Porsche",
-        model: "718 GT4 RS",
-        power: 500,
-        src: "https://static.wixstatic.com/media/bd4349_29da8c839ad141b189ff35a4ba47904a~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_29da8c839ad141b189ff35a4ba47904a~mv2.jpg",
-        ctaText: "Learn More",
-        ctaLink: "https://www.porsche.com/usa/models/718/718-cayman-gt4-rs/",
-        content: () => {
-          return (
-            <p>
-              The Porsche 718 GT4 RS is a race-bred sports car that delivers outstanding performance 
-              on both the track and the road. Powered by a 4.0-liter flat-six engine generating 500 horsepower, 
-              the GT4 RS is engineered for precision and speed. <br /> <br /> Its aerodynamic design and 
-              advanced suspension system make it one of the most track-capable models in the Porsche lineup.
-            </p>
-          );
-        },
+    },
+    {
+      description: "Petrol",
+      title: "Porsche 718 Spyder RS",
+      year: 2021,
+      brand: "Porsche",
+      model: "718 Spyder RS",
+      power: 500,
+      src: "https://static.wixstatic.com/media/bd4349_96869a4b367942e7bb0e929142864ce9~mv2.png/v1/fill/w_1552,h_1276,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/bd4349_96869a4b367942e7bb0e929142864ce9~mv2.png",
+      ctaText: "Learn More",
+      ctaLink: "https://www.porsche.com/usa/models/718/718-spyder-rs/",
+      content: () => {
+        return (
+          <p>
+            The Porsche 718 Spyder RS is a lightweight, high-performance roadster designed for pure driving 
+            pleasure. With its 4.0-liter flat-six engine producing 500 horsepower, the Spyder RS offers 
+            incredible agility and speed. <br /> <br /> Its convertible design, combined with Porsche&apos;s 
+            engineering prowess, makes it a thrilling choice for open-top driving enthusiasts.
+          </p>
+        );
       },
-  
+    },
+    {
+      description: "Petrol",
+      title: "Porsche 718 GT4 RS",
+      year: 2021,
+      brand: "Porsche",
+      model: "718 GT4 RS",
+      power: 500,
+      src: "https://static.wixstatic.com/media/bd4349_29da8c839ad141b189ff35a4ba47904a~mv2.jpg/v1/fill/w_1552,h_1276,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bd4349_29da8c839ad141b189ff35a4ba47904a~mv2.jpg",
+      ctaText: "Learn More",
+      ctaLink: "https://www.porsche.com/usa/models/718/718-cayman-gt4-rs/",
+      content: () => {
+        return (
+          <p>
+            The Porsche 718 GT4 RS is a race-bred sports car that delivers outstanding performance 
+            on both the track and the road. Powered by a 4.0-liter flat-six engine generating 500 horsepower, 
+            the GT4 RS is engineered for precision and speed. <br /> <br /> Its aerodynamic design and 
+            advanced suspension system make it one of the most track-capable models in the Porsche lineup.
+          </p>
+        );
+      },
+    },
+    {
+      title : "Mercedes - GT53 AMG",
+      year: 2021,
+      brand: "Mercedes",
+      model: "GT53 AMG",
+      power: 457,
+      cylinders: 6,
+      displacement: 3.0,
+      drive: "AWD",
+      max_speed: "285",
+      zero_to_100: "4.5",
+      price : "€120,000",
+      src : "https://static.wixstatic.com/media/bd4349_ff219b2632ba4623b7b3b0770cf2506a~mv2.jpg/v1/fill/w_776,h_638,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bd4349_ff219b2632ba4623b7b3b0770cf2506a~mv2.jpg",
+      ctaText: "Learn More",
+      ctaLink: "https://www.mercedes-benz.fr/passengercars/models/coupe/amg-gt-4-door/overview.html",
+      content: () => {
+        return (
+          <p>
+            The Mercedes GT53 AMG is a high-performance luxury coupe that combines elegance with 
+            exhilarating power. With a 3.0-liter inline-6 engine and EQ Boost technology, it delivers 
+            457 horsepower and 520 lb-ft of torque. <br /> <br /> Its sleek design, advanced technology, 
+            and refined interior make it the perfect choice for those seeking a sports car that offers 
+            both comfort and performance.
+          </p>
+        );
+      }
+    }
 ];
