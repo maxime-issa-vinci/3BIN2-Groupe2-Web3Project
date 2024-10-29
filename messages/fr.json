@@ -1,5 +1,9 @@
 {
     "HomePage": {
       "description": " Trouvez votre voiture idéale avec notre technologie de pointe. Nous analysons des milliers de données pour recommander le véhicule parfait en fonction de vos critères de performance, d'efficacité énergétique et de budget. "
+    },
+    "CarPage": {
+      "Mercedes": "La Mercedes G63 AMG est un SUV de luxe emblématique, alliant puissance brute et raffinement. Avec son moteur V8 biturbo de 4,0 litres, elle offre des performances exceptionnelles malgré sa taille imposante. Son design robuste et intemporel, hérité de la G-Class originale, cache une technologie de pointe et un intérieur somptueux. La G63 AMG est capable de performances impressionnantes en tout-terrain tout en offrant un confort de conduite luxueux sur la route. C'est le choix parfait pour ceux qui recherchent un véhicule combinant prestige, puissance et polyvalence.",
+      "Porsche GT3 Touring": "La Porsche GT3 Touring est un chef-d'œuvre de l'ingénierie allemande, alliant des capacités de haute performance à une élégance discrète. Cette voiture de route axée sur la piste est équipée d'un moteur six cylindres à plat de 4,0 litres atmosphérique, offrant une puissance exaltante et une bande-son électrisante. Contrairement à son frère plus flamboyant, la GT3, le pack Touring offre une apparence plus subtile, parfaite pour les amateurs qui préfèrent rester discrets. Avec sa maniabilité précise, sa technologie dérivée de la course et son utilisabilité au quotidien, la GT3 Touring représente le summum de l'expérience Porsche pour les conducteurs."
     }
   }
