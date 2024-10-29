@@ -3,8 +3,10 @@ import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "NextJs",
-    description: "...",
+    title: "Car Finder",
+    description: " Find your dream car",
+    keywords: ["car", "finder", "dream"],
+    authors: [{ name: 'Ibrahim A.' }, { name: 'Maxime I.' }, { name: 'Nicolae P.'}, { name: 'Yassin K.'}, { name: 'Ylann M.'}],
 };
 
 export default function RootLayout({
