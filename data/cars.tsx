@@ -158,7 +158,7 @@ export const cars = [
     },
     {
       description: "Petrol",
-      title: "BMW - M3 Compétition xDrive",
+      title: "BMW - M3 Competition xDrive",
       year: 2024,
       brand: "BMW",
       model: "M3 Competition xDrive",
