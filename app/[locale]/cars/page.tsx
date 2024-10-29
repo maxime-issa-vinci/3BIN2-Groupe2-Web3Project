@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useId, useRef, useState } from "react";
+import React, { act, useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../../components/hooks/use-outside-click";
 import Navbar from "../../../components/Navbar";
@@ -14,7 +14,7 @@ import {useTranslations} from 'next-intl';
 
 export default function ExpandableCardDemo() {
 
-  const t = useTranslations('HomePage');
+  const t = useTranslations('CarPage');
 
   
     const [active, setActive] = useState<(typeof cars)[number] | boolean | null>(
@@ -163,9 +163,9 @@ export default function ExpandableCardDemo() {
                       exit={{ opacity: 0 }}
                       className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                     >
-                      {typeof active.content === "function"
-                        ? active.content()
-                        : active.content}
+                      <p>
+                        {t(active.title)}
+                      </p>
                     </motion.div>
                   </div>
                 </div>
