@@ -2,6 +2,7 @@ import React from "react";
 import { Timeline } from "../../../components/ui/timeline";
 import Navbar from "../../../components/Navbar";
 import { cars } from "../../../data/cars";
+import Footer from "@/components/Footer";
 
 export default function TimelineDemo() {
   // Regroupement des voitures par année
@@ -33,6 +34,7 @@ export default function TimelineDemo() {
     <div>
       <Navbar />
       <Timeline data={timelineData} />
+      <Footer />
     </div>
   );
 }

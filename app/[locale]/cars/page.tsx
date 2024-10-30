@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { act, useEffect, useId, useRef, useState } from "react";
+import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../../components/hooks/use-outside-click";
 import Navbar from "../../../components/Navbar";
@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { SelectContent, Select, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 import {useTranslations} from 'next-intl';
+import Footer from "@/components/Footer";
 
 
 export default function ExpandableCardDemo() {
@@ -217,6 +218,7 @@ export default function ExpandableCardDemo() {
             </motion.div>
           ))}
         </ul>
+        <Footer />
       </>
     );
   }

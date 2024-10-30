@@ -27,6 +27,7 @@ import Link from "next/link";
 import { Cover } from "@/components/ui/cover";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const pathname = usePathname();
@@ -109,6 +110,7 @@ export default function Home() {
           </Link>
         </div>
       </BackgroundLines>
+      <Footer />
     </div>
   );
 }
