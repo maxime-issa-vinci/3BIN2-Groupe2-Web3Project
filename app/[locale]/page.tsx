@@ -28,11 +28,13 @@ import { Cover } from "@/components/ui/cover";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import Footer from "@/components/Footer";
+import { useLocale } from "next-intl";
 
 export default function Home() {
   const pathname = usePathname();
   const path = pathname.split('/')[1]; 
   const t = useTranslations('HomePage');
+  const locale = useLocale();
 
   return (
     <div>
@@ -103,7 +105,7 @@ export default function Home() {
               </DialogFooter>
             </DialogContent>
           </Dialog>
-          <Link href={`/${path}/cars`}>
+          <Link href={`/${locale}/cars`}>
             <Button className="px-4 py-2 rounded-md border border-neutral-300 bg-neutral-100 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md" variant="outline">
               All cars
             </Button>
