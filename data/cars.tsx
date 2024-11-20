@@ -2,6 +2,7 @@ import React from "react";
 
 export const cars = [
     {
+      id: 1,
       description: "German Engineering",  // Description de la voiture
       title: "Mercedes - G63 AMG",        // Titre de la voiture
       year: 2021,                         // Année de sortie
@@ -32,6 +33,7 @@ export const cars = [
         },
     },
     {
+        id: 2,
         description: "German Muscle",
         title: "Porsche GT3 Touring",
         year: 2022,
@@ -71,6 +73,7 @@ export const cars = [
         },
     },
     {
+        id: 3,
         description: "Luxury Sports Car",
         title: "Porsche Macan GTS",
         year: 2021,
@@ -101,6 +104,7 @@ export const cars = [
         },
     },
     {
+        id: 4,
         description: "Supercar",
         title: "Lamborghini Aventador SVJ",
         year: 2018,
@@ -132,6 +136,7 @@ export const cars = [
         },
     },
     {
+      id: 5,
       description: "Petrol",
       title: "Porsche - 992 Carrera",
       year: 2021,
@@ -160,6 +165,7 @@ export const cars = [
       },
     },
     {
+      id: 6,
       description: "Petrol",
       title: "BMW - M3 Competition xDrive",
       year: 2024,
@@ -187,6 +193,7 @@ export const cars = [
       },
     },
     {
+      id: 7,
       description: "Hybride",
       title: "Range Rover Sport P460e",
       year: 2021,
@@ -215,6 +222,7 @@ export const cars = [
       },
     },
     {
+      id: 8,
       description: "Hybride",
       title: "Porsche Cayenne E",
       year: 2021,
@@ -236,6 +244,7 @@ export const cars = [
       },
     },
     {
+      id: 9,
       description: "Hybride",
       title: "Range Rover LWB P440e",
       year: 2021,
@@ -257,6 +266,7 @@ export const cars = [
       },
     },
     {
+      id: 10,
       description: "Petrol",
       title: "Aston Martin - Vantage V8 Roadster",
       year: 2021,
@@ -284,6 +294,7 @@ export const cars = [
       },
     },
     {
+      id: 11,
       description: "Hybride",
       title: "Range Rover SWB P560e",
       year: 2021,
@@ -311,6 +322,7 @@ export const cars = [
       },
     },
     {
+      id: 12,
       description: "Petrol",
       title: "Lamborghini Tecnica",
       year: 2021,
@@ -333,6 +345,7 @@ export const cars = [
       },
     },
     {
+      id: 13,
       description: "Petrol",
       title: "Lamborghini Urus Performante",
       year: 2021,
@@ -362,6 +375,7 @@ export const cars = [
       },
     },
     {
+      id: 14,
       description: "Petrol",
       title: "Lamborghini Urus S",
       year: 2021,
@@ -384,6 +398,7 @@ export const cars = [
       },
     },
     {
+      id: 15,
       description: "Petrol",
       title: "Porsche GT3 RS",
       year: 2021,
@@ -406,6 +421,7 @@ export const cars = [
       },
     },
     {
+      id: 16,
       description: "Petrol",
       title: "Porsche - 992 GT3",
       year: 2021,
@@ -433,6 +449,7 @@ export const cars = [
       },
     },
     {
+      id: 17,
       description: "Petrol",
       title: "Bentley Bentayga V8 S",
       year: 2021,
@@ -455,6 +472,7 @@ export const cars = [
       },
     },
     {
+      id: 18,
       description: "Petrol",
       title: "Bentley Continental W12",
       year: 2021,
@@ -477,6 +495,7 @@ export const cars = [
       },
     },
     {
+      id: 19,
       description: "Petrol",
       title: "Bentley Continental V8 S",
       year: 2021,
@@ -499,6 +518,7 @@ export const cars = [
       },
     },
     {
+      id: 20,
       description: "Petrol",
       title: "Ferrari Roma",
       year: 2021,
@@ -521,6 +541,7 @@ export const cars = [
       },
     },
     {
+      id: 21,
       description: "Petrol",
       title: "Range Rover Sport SV P635",
       year: 2021,
@@ -543,6 +564,7 @@ export const cars = [
       },
     },
     {
+      id: 22,
       description: "Petrol",
       title: "Porsche 718 Spyder RS",
       year: 2021,
@@ -564,6 +586,7 @@ export const cars = [
       },
     },
     {
+      id: 23,
       description: "Petrol",
       title: "Porsche 718 GT4 RS",
       year: 2021,
@@ -585,6 +608,7 @@ export const cars = [
       },
     },
     {
+      id: 24,
       title : "Mercedes - GT53 AMG",
       year: 2021,
       brand: "Mercedes",
