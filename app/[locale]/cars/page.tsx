@@ -11,6 +11,7 @@ import { SelectContent, Select, SelectItem, SelectTrigger, SelectValue } from "@
 import { useTranslations } from 'next-intl';
 import Footer from "@/components/Footer";
 
+
 export default function ExpandableCardDemo() {
   const t = useTranslations('CarPage');
 
@@ -25,6 +26,29 @@ export default function ExpandableCardDemo() {
 
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+  if (active && typeof active === 'object') {
+    document.title = `${active.title} - Car Finder`;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        'content',
+        `Découvrez ${active.title}, une voiture exceptionnelle avec ${active.power} chevaux et une vitesse maximale de ${active.max_speed} km/h.`
+      );
+    }
+  } else {
+    document.title = 'Car Finder - Trouvez votre voiture';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        'content',
+        'Explorez notre collection de voitures pour trouver celle qui correspond à vos besoins.'
+      );
+    }
+  }
+}, [active]);
+
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -58,6 +82,10 @@ export default function ExpandableCardDemo() {
 
   return (
     <>
+
+
+    
+
       <Navbar />
       <div className="mt-28">
         <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl lg:text-5xl font-sans py-2 relative font-bold tracking-tight">
